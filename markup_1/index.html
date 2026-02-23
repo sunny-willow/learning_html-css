@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Форма подписки и письмо-ответ</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body style="font-family: Arial, Helvetica, sans-serif">
+        <section> <!--Секция формы подписки. Секция должна иметь тему-->
+            <form method="post">
+                <table>
+                    <thead>
+                        <tr>
+                            <td colspan="2"><h2 style="text-align: center;">Хочу подписаться!</h2></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2">После вашего согласия на подписку вам будут приходить<br>
+                                уведомления на почту и телефон</td>
+                        </tr>
+                        <tr>
+                            <td><label for="name">Ваше имя</label></td>
+                            <td><input type="text" placeholder="Имя" id="name" required style="width: 100%">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Email</label></td>
+                            <td><input type="email" placeholder="email@yandex.ru" required id="mail"
+                                style="width: 100%"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Телефон</label></td>
+                            <td><input type="tel" required pattern="89[0-9]{9}" placeholder="89990007766"
+                                id="phone" style="width: 100%"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Хочу получать уведомления:<br>
+                            <input type="checkbox" id="mailcheck"><label for="mailcheck">на почту</label><br>
+                            <input type="checkbox" id="phonecheck"><label for="phonecheck">на телефон</label>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button style="background-color: #ffffff; border-color: #c9c9c9;
+                                border-width: thin; width: 140px; height: 30px;">Подписаться</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <hr>
+        <section> <!--Секция письма-ответа-->
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><h3>Письмо-ответ</h3></td>
+                    </tr>
+                    <tr>
+                        <td>Здравствуйте, Николай!</td>
+                        <td rowspan="2"><img src="image.jpg" alt="логотип Яндекса" title="логотип Яндекса"
+                            width="80"></td>
+                    </tr>
+                    <tr>
+                        <td>Вы подписались на уведомления о новостях<br>
+                            Яндекса.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Уведомления будут приходить вам на этот<br>
+                            email и на указанный вами телефон &ndash;<br>
+                            +79ххххххх78.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Для подтверждения перейдите по <a href="">ссылке</a>.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-top: 50px;">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <small>
+                                <a href="mailto:sunny_willow@mail.ru">Пожаловаться</a>
+                            </small>
+                        </td>
+                        <td>
+                            <small>
+                                &copy; 2018, <a href="http://yandex.ru" title="Яндекс" target="_blank">Яндекс
+                                </a>
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <br>
+        <br>
+        <section> <!--Время выполнения и заметки-->
+            <h4>Время выполнения:</h4><span>17.02.2026 &ndash; 23.02.2026</span>
+            <h3>Заметки, проверка работы элементов</h3>
+        </section>
+    </body>
+</html>
