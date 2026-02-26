@@ -12,7 +12,7 @@
         }
     </style>
 </head>
-    <body style="font-family: Arial, Helvetica, sans-serif">
+    <body id="anchor" style="font-family: Arial, Helvetica, sans-serif">
         <section> <!--Секция формы подписки. Секция должна иметь тему-->
             <form method="post">
                 <table>
@@ -43,7 +43,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">Хочу получать уведомления:<br>
-                            <input type="checkbox" id="mailcheck"><label for="mailcheck">на почту</label><br>
+                            <input type="checkbox" id="mailcheck" checked><label for="mailcheck">на почту</label><br>
                             <input type="checkbox" id="phonecheck"><label for="phonecheck">на телефон</label>
                         </td>
                         </tr>
@@ -107,6 +107,49 @@
             <h4>Время выполнения:</h4><span>17.02.2026 &ndash; 23.02.2026</span>
             <h3>Заметки, проверка работы элементов</h3>
             <!--Open Graph – возможность связывать свой контент с социальными сетями и правильно его там представлять-->
+            <ol type="I"> <!--нумерованный список-->
+                <li>Первый</li>
+                <li>Второй</li>
+                <li>Третий
+                    <ul> <!--ненумерованный список-->
+                        <li>3,12</li>
+                        <li>3,01</li>
+                    </ul>
+                </li>
+                <li>Четвертый</li>
+                <li>Пятый</li>
+            </ol>
+            <a href="#anchor">Вернуться наверх</a> <!--Якорь по id-->
+            <p>
+                <input type="text" value="Текстовое поле">
+                <input type="file">
+            </p>
+            <p>
+                <select name="letter">
+                    <option selected>Выберите букву</option>
+                    <option value="Чебурашка">Аз</option>
+                    <option value="Крокодил Гена">Боги</option>
+                    <option value="Шапокляк">Веди</option>
+                    <option value="Крыса Лариса">Глаголи</option>
+                </select>
+            </p>
+            <p>
+                <textarea rows="7"
+                    cols="37"
+                    name="text"
+                    placeholder="Введите текст">Привет, меня зовут</textarea>
+            </p>
+            <article>
+                <p><abbr title="World Wide Web">WWW</abbr><!-- Аббревиатура -->
+                    &ndash; это глобальная система взаимосвязанных веб-страниц, к которым можно
+                    получить доступ через интернет.</p>
+                <p>Проще говоря, это <span style="color: green">онлайн-библиотека</span>, где вместо книг &ndash; веб-страницы,
+                    а вместо каталогов &ndash; гиперссылки, позволяющие мгновенно переходить от одного документа к другому. </p>
+            </article>
+            <footer>
+                <p>Последняя модификация: <time>2026-02-26</time></p>
+                <address>Автор: sunny_willow.ru</address>
+            </footer>
         </section>
     </body>
 </html>
